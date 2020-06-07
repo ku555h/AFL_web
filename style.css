@@ -1,0 +1,8 @@
+html {
+    background-color: aqua;
+}
+.popup {
+    position: fixed;
+    height: 100px;
+    width: 300px;
+}

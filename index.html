@@ -11,10 +11,50 @@
     <div class="popup">
         <div class="popup_container">
             <select name="favTeam" id="favTeam">Select a team : </select>
-            <button class="btn_slct_team"> SLECT </button>
+            <button class="btn_slct_team"> SELECT </button>
         </div>
-        <div></div>
+        <div class="closeIcon">--</div>        
+    </div>
+    <br><br> 
+    <button class="btn_chng_team">Change Team</button>
+    <div class="choosenTeam">
+        <h1 class="primaryHeading"></h1>
+        <h2 class="teamName"></h2>
+        <p class="abbrev"></p>
+        <img src="" alt="" />
+    </div>
+    <br><br>
+    <div class="predictions">
+        <h1 class="primaryHeading"></h1>
+        <p class="round"></p>
+        <p class="teams"></p>
+        <p class="chance"></p>
+    </div>
+    <br><br>
+    <div class="results">
+        <h1 class="primaryHeading">The predictions for Next Game</h1>
+        <div class="result">
+            <p class="teams">
+                ${game.hteam}<span>(H)</span> <b>V/S</b> ${game.ateam}<span>(A)</span>
+            </p>
+            <p class="round"> <b>Round :</b> ${game.round} </p>
+            <h2 class="winner">${game.winner} won by ${difference} points</h2>
+        </div>
+    </div>
+    <br><br>
+    <div class="nextMatch">
+        <h1 class="primaryHeading"> Next five match details</h1>
+        <p class="teams">
+            ${game.hteam}<span>(H)</span><b>V/S</b> ${game.ateam} <span>(A)</span>
+        </p>
+        <p class="venueName"> ${game.venue}</p>
+    </div>
+    <br><br>
+    <div class="venues">
+        <h1 class="primaryHeading"> All the venues where ${game.winner} has won, </h1>
+        <p class="venueName">${game.venue}</p>
     </div>
     
+    <script src="app.js"></script>
 </body>
 </html>
